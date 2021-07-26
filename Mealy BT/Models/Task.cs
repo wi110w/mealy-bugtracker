@@ -1,15 +1,23 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace Mealy_BT
+namespace Mealy_BT.Models
 {
-    public class WeatherForecast
+    public class Task
     {
-        public DateTime Date { get; set; }
-
-        public int TemperatureC { get; set; }
-
-        public int TemperatureF => 32 + (int) (TemperatureC / 0.5556);
-
-        public string Summary { get; set; }
+        [Key]
+        [Required]
+        public int Id { get; set; }
+        public string Type { get; set; }
+        [Required]
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public DateTime CreationDate { get; set; }
+        public DateTime UpdateDate { get; set; }
+        public string Assignee { get; set; }
+        public int Priority { get; set; }
+        public string Status { get; set; }
+        public string Tags { get; set; }
+        public string Comments { get; set; }
     }
 }
