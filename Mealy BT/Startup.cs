@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
 namespace Mealy_BT
@@ -27,6 +21,9 @@ namespace Mealy_BT
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddEntityFrameworkNpgsql().AddDbContext<Mealy_BT.Models.MealyContext>
+            (opt =>
+                opt.UseNpgsql(Configuration.GetConnectionString("MealyConnection")));
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Mealy BT", Version = "v1"}); });
         }
 
