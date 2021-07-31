@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mealy BT", "Mealy BT\Mealy BT.csproj", "{5F76C7EE-4CAE-4B31-9F98-0BD783B588B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mealy BT.Tests", "Mealy BT.Tests\Mealy BT.Tests.csproj", "{AD80A2DD-BB47-4FB7-9F60-55B30FC177E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{5F76C7EE-4CAE-4B31-9F98-0BD783B588B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F76C7EE-4CAE-4B31-9F98-0BD783B588B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F76C7EE-4CAE-4B31-9F98-0BD783B588B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD80A2DD-BB47-4FB7-9F60-55B30FC177E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD80A2DD-BB47-4FB7-9F60-55B30FC177E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD80A2DD-BB47-4FB7-9F60-55B30FC177E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD80A2DD-BB47-4FB7-9F60-55B30FC177E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
