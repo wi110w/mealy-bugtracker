@@ -1,3 +1,4 @@
+using MealyBT.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace Mealy_BT
+namespace MealyBT
 {
     public class Startup
     {
@@ -21,7 +22,7 @@ namespace Mealy_BT
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddEntityFrameworkNpgsql().AddDbContext<Mealy_BT.Models.MealyContext>
+            services.AddEntityFrameworkNpgsql().AddDbContext<MealyContext>
             (opt =>
                 opt.UseNpgsql(Configuration.GetConnectionString("MealyConnection")));
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Mealy BT", Version = "v1"}); });

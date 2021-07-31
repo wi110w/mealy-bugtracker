@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Mealy_BT.Migrations
+namespace MealyBT.Migrations
 {
     public partial class Initial : Migration
     {

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Mealy_BT.Models
+namespace MealyBT.Models
 {
     public class MealyContext:DbContext
     {

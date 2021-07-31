@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Mealy_BT.Controllers
+namespace MealyBT.Controllers
 {
     [ApiController]
     [Route("[controller]")]
